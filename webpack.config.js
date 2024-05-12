@@ -2,6 +2,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -10,15 +11,31 @@ module.exports = {
     filename: 'bundle.js'
   },
   plugins: [
+    new CopyWebpackPlugin({
+        patterns: [
+          {
+            from: 'src/assets/images', // Исходная директория
+            to: 'assets/images' // Целевая директория внутри dist
+          }
+        ]
+      }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: './src/pages/index.html',
       filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/pages/about.html',
-      filename: 'about.html'
-    })
+      template: './src/pages/rozklad.html',
+      filename: 'rozklad.html'
+    }),
+    new HtmlWebpackPlugin({
+        template: './src/pages/news.html',
+        filename: 'news.html'
+      }),
+      new HtmlWebpackPlugin({
+        template: './src/pages/photo.html',
+        filename: 'photo.html'
+      }),
   ],
   devServer: {
     static: {
