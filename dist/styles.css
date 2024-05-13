@@ -1,0 +1,44 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{width:50%;margin:0 auto;font-family:Helvetica,sans-serif;background:linear-gradient(to right, #E6E617, #9A9A3D, #7B7B04, #F6F662, #F6F69C)}header{margin-top:30px}header nav ul{display:flex;justify-content:space-between}header nav ul li{font-weight:bold;font-size:20px}h1{font-size:40px;margin-top:20px;margin-bottom:20px}p{margin-top:20px;margin-bottom:20px}article{margin-bottom:10px}article h2{font-size:25px;margin-bottom:10px;font-weight:bold}table{width:100%;border-collapse:collapse;margin:20px 0}table th,table td{border:1px solid #ddd;padding:8px;text-align:left}table th{background-color:#009688;color:#fff}.teachers li{background-color:#0056b3;color:#fff;padding:10px 15px;margin:5px 0;border-radius:5px;box-shadow:0 2px 4px rgba(0,0,0,.1)}.teachers li:hover{background-color:#003d80}
